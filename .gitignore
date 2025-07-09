@@ -38,11 +38,6 @@ node_modules/
 /backend/UniVC/mvnw
 /backend/UniVC/mvnw.cmd
 
-# Gradle specific (if using Gradle instead of Maven)
-/backend/UniVC/.gradle/
-/backend/UniVC/build/
-/backend/UniVC/gradle-app.setting
-
 # IDEs & tooling
 /backend/UniVC/.idea/
 /backend/UniVC/*.iml
