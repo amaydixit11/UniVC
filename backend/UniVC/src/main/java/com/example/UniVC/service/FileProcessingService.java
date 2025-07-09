@@ -5,6 +5,7 @@ import com.example.UniVC.dto.FileInfoResponse;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -18,7 +19,11 @@ public class FileProcessingService {
     private final ObjectMapper objectMapper;
     private final Pattern jwtPattern = Pattern.compile("^[A-Za-z0-9_-]+\\.[A-Za-z0-9_-]+\\.[A-Za-z0-9_-]+$");
 
-    public FileProcessingService() {
+    private final FormatDetectionService formatDetectionService;
+
+    @Autowired
+    public FileProcessingService(FormatDetectionService formatDetectionService) {
+        this.formatDetectionService = formatDetectionService;
         this.objectMapper = new ObjectMapper();
     }
 
