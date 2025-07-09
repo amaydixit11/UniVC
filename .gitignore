@@ -1,0 +1,48 @@
+# Global
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.swo
+node_modules/
+.env*
+*.iml
+.idea/
+.vscode/
+*.bak
+
+# Frontend: Next.js
+/frontend/.next/
+/frontend/node_modules/
+/frontend/out/
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+
+# Optional: if you're using TypeScript
+/frontend/*.tsbuildinfo
+
+# Backend: Spring Boot (Java)
+/backend/UniVC/target/
+/backend/UniVC/.classpath
+/backend/UniVC/.project
+/backend/UniVC/.settings/
+/backend/UniVC/.env
+/backend/UniVC/logs/
+/backend/UniVC/*.log
+
+# Maven specific
+/backend/UniVC/.mvn/
+/backend/UniVC/mvnw
+/backend/UniVC/mvnw.cmd
+
+# Gradle specific (if using Gradle instead of Maven)
+/backend/UniVC/.gradle/
+/backend/UniVC/build/
+/backend/UniVC/gradle-app.setting
+
+# IDEs & tooling
+/backend/UniVC/.idea/
+/backend/UniVC/*.iml
